@@ -1,0 +1,281 @@
+/* GLOBAL STYLE */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    color: #0a4c5f;
+    background-color: #f8fbfc;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section.light {
+    background: #e8f6fc;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 50px;
+    background: linear-gradient(to right, #0c5474, #1390c7);
+    color: white;
+    border-bottom: 6px solid #f7c531;
+}
+
+
+/* Left content */
+.hero-left {
+    max-width: 60%;
+}
+.hero h1:hover {
+    transform: scale(1.06);
+    text-shadow: 0 0 12px rgba(0, 193, 222, 0.7);
+}
+
+.tagline {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background: #f7c531;
+    color: #0c5474;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: white;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Logo right side */
+.logo {
+    width: 180px;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.06);
+}
+
+/* NAVBAR */
+.navbar {
+    background: #0c5474;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 12px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.navbar a:hover {
+    color: #f7c531;
+    transform: scale(1.05);
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    width: 290px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    border-top: 4px solid #0c5474;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    border-top-color: #f7c531;
+}
+.about-points {
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto;
+    padding-left: 20px;
+    list-style: disc;
+    font-size: 1.1rem;
+    color: #023048; /* Deep Navy for premium contrast */
+}
+
+.about-points li {
+    margin-bottom: 15px;
+}
+
+.section#about p {
+    font-size: 1.1rem;
+    color: #0c5474; /* Brand Blue */
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 10px auto;
+}
+/* SERVICES */
+.service-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+.service-list li {
+    margin: 10px 0;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.service-list li:hover {
+    color: #f7c531;
+    transform: translateX(5px);
+}
+/* Social Connect Section */
+.social-connect {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f7ffff;
+}
+
+.social-connect h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(0,193,222);
+    margin-bottom: 10px;
+}
+
+.social-connect p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* DOWNLOAD APPS SECTION */
+#download {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f0fcff; /* subtle premium background */
+    color: #0c5474;
+}
+
+#download h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: rgb(0,193,222); /* brand color */
+}
+
+#download p {
+    font-size: 1.1rem;
+    max-width: 750px;
+    margin: 10px auto 25px;
+    line-height: 1.6;
+}
+
+.app-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.app-links .app-badge {
+    width: 180px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-links .app-badge:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+.badge-container {
+    text-align: center;
+}
+
+.badge-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #0c5474;
+    font-size: 1rem;
+}
+
+
+/* Icons - Clean Circle Style */
+.social-icons a {
+    width: 55px;
+    height: 55px;
+    background-color: rgb(0,193,222);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+
+/* Icon images */
+.social-icons a.yt { background-image: url('https://cdn-icons-png.flaticon.com/512/1384/1384060.png'); background-size: 60%; background-repeat: no-repeat; background-position: center; }
+.social-icons a.ig { background-image: url('https://cdn-icons-png.flaticon.com/512/1384/1384063.png'); background-size: 60%; background-repeat: no-repeat; background-position: center; }
+.social-icons a.fb { background-image: url('https://cdn-icons-png.flaticon.com/512/5968/5968764.png'); background-size: 60%; background-repeat: no-repeat; background-position: center; }
+.social-icons a.wa { background-image: url('https://cdn-icons-png.flaticon.com/512/733/733585.png'); background-size: 60%; background-repeat: no-repeat; background-position: center; }
+
+.social-icons a:hover {
+    background-color: #00a6bd;
+    transform: scale(1.1);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #0c5474;
+    color: white;
+    margin-top: 40px;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+}
